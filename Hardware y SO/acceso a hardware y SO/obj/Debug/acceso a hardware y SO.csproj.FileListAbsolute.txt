@@ -1,0 +1,11 @@
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\bin\Debug\acceso a hardware y SO.exe.config
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\bin\Debug\acceso a hardware y SO.exe
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\bin\Debug\acceso a hardware y SO.pdb
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\acceso a hardware y SO.csproj.AssemblyReference.cache
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\acceso a hardware y SO.csproj.SuggestedBindingRedirects.cache
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\acceso_a_hardware_y_SO.Properties.Resources.resources
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\acceso a hardware y SO.csproj.GenerateResource.cache
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\acceso a hardware y SO.csproj.CoreCompileInputs.cache
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\acceso a hardware y SO.exe
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\acceso a hardware y SO.pdb
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\acceso_a_hardware_y_SO.Inicio.resources

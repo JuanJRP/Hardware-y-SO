@@ -10,7 +10,7 @@ namespace Mac_adress
 {
     internal class address
     {
-        public string Mac()
+        public static string Mac()
         {
             try
             {
@@ -25,7 +25,7 @@ namespace Mac_adress
                     }
                     return sMacAddress;
                 }
-                return null;
+                return "";
             }
            catch
             {

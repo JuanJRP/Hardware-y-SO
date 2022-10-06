@@ -25,7 +25,7 @@ namespace serial_CD
             }
             catch
             {
-                return "no tiene";
+                return "No hay instancias disponibles.";
             }
             return "";
 

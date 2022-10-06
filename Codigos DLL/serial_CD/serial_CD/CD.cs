@@ -25,7 +25,7 @@ namespace serial_CD
             }
             catch
             {
-                return "";
+                return "no tiene";
             }
             return "";
 

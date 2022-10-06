@@ -8,23 +8,34 @@ using System.Threading.Tasks;
 
 namespace Mac_adress
 {
-    public class address
+    internal class address
     {
-        public void Mac_adress ()
+        public string Mac()
         {
-            NetworkInterface[] nics = NetworkInterface.GetAllNetworkInterfaces ();
-            string sMacAddress = string.Empty;
-            foreach (NetworkInterface adapter in nics)
-            { 
-                if (sMacAddress == string.Empty)
+            try
+            {
+                NetworkInterface[] nics = NetworkInterface.GetAllNetworkInterfaces();
+                string sMacAddress = string.Empty;
+                foreach (NetworkInterface adapter in nics)
                 {
-                    IPInterfaceProperties properties = adapter.GetIPProperties ();
-                    sMacAddress = adapter.GetPhysicalAddress().ToString ();
+                    if (sMacAddress == string.Empty)
+                    {
+                        IPInterfaceProperties properties = adapter.GetIPProperties();
+                        sMacAddress = adapter.GetPhysicalAddress().ToString();
+                    }
+                    return sMacAddress;
                 }
+                return null;
             }
-        }
-        
-       
+           catch
+            {
+                return " ";
+            }
 
+            
+        }
+            
+            
+          
     }
 }

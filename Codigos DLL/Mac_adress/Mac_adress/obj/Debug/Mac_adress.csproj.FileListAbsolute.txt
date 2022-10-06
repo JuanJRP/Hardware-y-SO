@@ -1,0 +1,8 @@
+C:\Users\Yurany\Desktop\dll\Codigos DLL\Mac_adress\Mac_adress\bin\Debug\Mac_adress.dll
+C:\Users\Yurany\Desktop\dll\Codigos DLL\Mac_adress\Mac_adress\bin\Debug\Mac_adress.pdb
+C:\Users\Yurany\Desktop\dll\Codigos DLL\Mac_adress\Mac_adress\obj\Debug\Mac_adress.csproj.AssemblyReference.cache
+C:\Users\Yurany\Desktop\dll\Codigos DLL\Mac_adress\Mac_adress\obj\Debug\Mac_adress.csproj.CoreCompileInputs.cache
+C:\Users\Yurany\Desktop\dll\Codigos DLL\Mac_adress\Mac_adress\obj\Debug\Mac_adress.dll
+C:\Users\Yurany\Desktop\dll\Codigos DLL\Mac_adress\Mac_adress\obj\Debug\Mac_adress.pdb
+C:\Users\Yurany\Desktop\dll\Codigos DLL\Mac_adress\Mac_adress\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\Yurany\Desktop\dll\Codigos DLL\Mac_adress\Mac_adress\obj\Debug\Mac_adress.csproj.CopyComplete

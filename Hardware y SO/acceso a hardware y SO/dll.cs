@@ -90,5 +90,23 @@ namespace acceso_a_hardware_y_SO
             }
             catch { }
         }
+
+        public static string RAM()
+        {
+            ObjectQuery info = new ObjectQuery("SELECT * FROM Win32_OperatingSystem");
+            ManagementObjectSearcher busqueda = new ManagementObjectSearcher(info);
+            ManagementObjectCollection resultado = busqueda.Get();
+            string Ram = "";
+            foreach (ManagementObject Seleccion in resultado)
+            {
+                Ram += ($"Memoria Total Visible: {Convert.ToInt32(Seleccion["TotalVisibleMemorySize"]) / 1000} MB \n\r" +
+                    $"Memoria Total Visible: {Convert.ToInt32(Seleccion["TotalVisibleMemorySize"]) / 1000} MB \n\r" +
+                    $"Memoria Fisica Disponible: {Convert.ToInt32(Seleccion["FreePhysicalMemory"]) / 1000} MB \n\r" +
+                    $"Memoria Total Virtual: {Convert.ToInt32(Seleccion["TotalVirtualMemorySize"]) / 1000} MB \n\r" +
+                    $"Memoria Virtual Libre: {Convert.ToInt32(Seleccion["FreeVirtualMemory"]) / 1000} MB \n\r"
+                    );
+            }
+            return Ram;
+        }
     }
 }       

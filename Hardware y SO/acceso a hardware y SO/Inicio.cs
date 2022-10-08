@@ -38,7 +38,7 @@ namespace acceso_a_hardware_y_SO
                 $"Serial CD:  {Informacion.Serial_CD()} \n\r" +
                 $"Serial DVD:  {Informacion.Serial_CD()} \n\r" + 
                 $"Procesadores: {Informacion.Procesadores().ToString()} \n\r" +
-                $"Memoria Ram: \n\r" 
+                $"Memoria Ram: \n\r{Informacion.RAM()}\n\r" 
                 );
         }
 

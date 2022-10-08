@@ -29,65 +29,71 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
-            this.menu = new System.Windows.Forms.MenuStrip();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.plGeneral = new System.Windows.Forms.Panel();
+            this.cmdSalir = new System.Windows.Forms.Button();
+            this.cmdInformacion = new System.Windows.Forms.Button();
             this.cmdBalance = new System.Windows.Forms.Button();
             this.cmdRegistro = new System.Windows.Forms.Button();
             this.cmdProcesos = new System.Windows.Forms.Button();
             this.cmdGeneral = new System.Windows.Forms.Button();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.plInformacion = new System.Windows.Forms.Panel();
             this.lblVersion = new System.Windows.Forms.Label();
-            this.lblHDD = new System.Windows.Forms.Label();
-            this.lblHDDinfo = new System.Windows.Forms.Label();
-            this.lblCDinfo = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblDVDinfo = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lblUDinfo = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.menu.SuspendLayout();
+            this.rtbInformacion = new System.Windows.Forms.RichTextBox();
+            this.plFinalizar = new System.Windows.Forms.Panel();
+            this.cmdFinalizar = new System.Windows.Forms.Button();
+            this.N = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Nombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.MB = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvwInformacion = new System.Windows.Forms.ListView();
             this.plGeneral.SuspendLayout();
-            this.plInformacion.SuspendLayout();
+            this.plFinalizar.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menu
-            // 
-            this.menu.BackColor = System.Drawing.Color.White;
-            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exitToolStripMenuItem,
-            this.aboutToolStripMenuItem});
-            this.menu.Location = new System.Drawing.Point(0, 0);
-            this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(800, 24);
-            this.menu.TabIndex = 1;
-            this.menu.Text = "menuStrip1";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // plGeneral
             // 
             this.plGeneral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.plGeneral.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plGeneral.Controls.Add(this.cmdSalir);
+            this.plGeneral.Controls.Add(this.cmdInformacion);
             this.plGeneral.Controls.Add(this.cmdBalance);
             this.plGeneral.Controls.Add(this.cmdRegistro);
             this.plGeneral.Controls.Add(this.cmdProcesos);
             this.plGeneral.Controls.Add(this.cmdGeneral);
-            this.plGeneral.Location = new System.Drawing.Point(12, 39);
+            this.plGeneral.Location = new System.Drawing.Point(12, 25);
             this.plGeneral.Name = "plGeneral";
-            this.plGeneral.Size = new System.Drawing.Size(147, 184);
+            this.plGeneral.Size = new System.Drawing.Size(147, 237);
             this.plGeneral.TabIndex = 2;
+            // 
+            // cmdSalir
+            // 
+            this.cmdSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.cmdSalir.FlatAppearance.BorderSize = 0;
+            this.cmdSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdSalir.ForeColor = System.Drawing.Color.White;
+            this.cmdSalir.Location = new System.Drawing.Point(3, 191);
+            this.cmdSalir.Name = "cmdSalir";
+            this.cmdSalir.Size = new System.Drawing.Size(139, 29);
+            this.cmdSalir.TabIndex = 5;
+            this.cmdSalir.Text = "Salir";
+            this.cmdSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cmdSalir.UseVisualStyleBackColor = false;
+            this.cmdSalir.Click += new System.EventHandler(this.cmdSalir_Click);
+            // 
+            // cmdInformacion
+            // 
+            this.cmdInformacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.cmdInformacion.FlatAppearance.BorderSize = 0;
+            this.cmdInformacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdInformacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdInformacion.ForeColor = System.Drawing.Color.White;
+            this.cmdInformacion.Location = new System.Drawing.Point(3, 156);
+            this.cmdInformacion.Name = "cmdInformacion";
+            this.cmdInformacion.Size = new System.Drawing.Size(139, 29);
+            this.cmdInformacion.TabIndex = 4;
+            this.cmdInformacion.Text = "Informacion";
+            this.cmdInformacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cmdInformacion.UseVisualStyleBackColor = false;
+            this.cmdInformacion.Click += new System.EventHandler(this.cmdInformacion_Click);
             // 
             // cmdBalance
             // 
@@ -98,11 +104,12 @@
             this.cmdBalance.ForeColor = System.Drawing.Color.White;
             this.cmdBalance.Location = new System.Drawing.Point(3, 51);
             this.cmdBalance.Name = "cmdBalance";
-            this.cmdBalance.Size = new System.Drawing.Size(143, 29);
+            this.cmdBalance.Size = new System.Drawing.Size(139, 29);
             this.cmdBalance.TabIndex = 1;
             this.cmdBalance.Text = "Balance del sistema";
             this.cmdBalance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdBalance.UseVisualStyleBackColor = false;
+            this.cmdBalance.Click += new System.EventHandler(this.cmdBalance_Click);
             // 
             // cmdRegistro
             // 
@@ -118,6 +125,7 @@
             this.cmdRegistro.Text = "Registro del sistema";
             this.cmdRegistro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdRegistro.UseVisualStyleBackColor = false;
+            this.cmdRegistro.Click += new System.EventHandler(this.cmdRegistro_Click);
             // 
             // cmdProcesos
             // 
@@ -128,11 +136,12 @@
             this.cmdProcesos.ForeColor = System.Drawing.Color.White;
             this.cmdProcesos.Location = new System.Drawing.Point(3, 121);
             this.cmdProcesos.Name = "cmdProcesos";
-            this.cmdProcesos.Size = new System.Drawing.Size(128, 29);
+            this.cmdProcesos.Size = new System.Drawing.Size(139, 29);
             this.cmdProcesos.TabIndex = 3;
             this.cmdProcesos.Text = "Procesos activos";
             this.cmdProcesos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdProcesos.UseVisualStyleBackColor = false;
+            this.cmdProcesos.Click += new System.EventHandler(this.cmdProcesos_Click);
             // 
             // cmdGeneral
             // 
@@ -143,39 +152,12 @@
             this.cmdGeneral.ForeColor = System.Drawing.Color.White;
             this.cmdGeneral.Location = new System.Drawing.Point(3, 16);
             this.cmdGeneral.Name = "cmdGeneral";
-            this.cmdGeneral.Size = new System.Drawing.Size(128, 29);
+            this.cmdGeneral.Size = new System.Drawing.Size(139, 29);
             this.cmdGeneral.TabIndex = 0;
             this.cmdGeneral.Text = "General";
             this.cmdGeneral.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cmdGeneral.UseVisualStyleBackColor = false;
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // plInformacion
-            // 
-            this.plInformacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.plInformacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plInformacion.Controls.Add(this.lblUDinfo);
-            this.plInformacion.Controls.Add(this.label11);
-            this.plInformacion.Controls.Add(this.label8);
-            this.plInformacion.Controls.Add(this.label9);
-            this.plInformacion.Controls.Add(this.label6);
-            this.plInformacion.Controls.Add(this.label7);
-            this.plInformacion.Controls.Add(this.lblDVDinfo);
-            this.plInformacion.Controls.Add(this.label5);
-            this.plInformacion.Controls.Add(this.lblCDinfo);
-            this.plInformacion.Controls.Add(this.label3);
-            this.plInformacion.Controls.Add(this.lblHDDinfo);
-            this.plInformacion.Controls.Add(this.lblHDD);
-            this.plInformacion.Location = new System.Drawing.Point(165, 39);
-            this.plInformacion.Name = "plInformacion";
-            this.plInformacion.Size = new System.Drawing.Size(623, 406);
-            this.plInformacion.TabIndex = 7;
+            this.cmdGeneral.Click += new System.EventHandler(this.cmdGeneral_Click);
             // 
             // lblVersion
             // 
@@ -187,151 +169,81 @@
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(33, 15);
             this.lblVersion.TabIndex = 8;
-            this.lblVersion.Text = "v1.0";
+            this.lblVersion.Text = "v1.1";
             // 
-            // lblHDD
+            // rtbInformacion
             // 
-            this.lblHDD.AutoSize = true;
-            this.lblHDD.BackColor = System.Drawing.Color.Transparent;
-            this.lblHDD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHDD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblHDD.Location = new System.Drawing.Point(21, 22);
-            this.lblHDD.Name = "lblHDD";
-            this.lblHDD.Size = new System.Drawing.Size(97, 18);
-            this.lblHDD.TabIndex = 9;
-            this.lblHDD.Text = "Serial HDD:";
+            this.rtbInformacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.rtbInformacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbInformacion.ForeColor = System.Drawing.Color.White;
+            this.rtbInformacion.Location = new System.Drawing.Point(165, 25);
+            this.rtbInformacion.Name = "rtbInformacion";
+            this.rtbInformacion.ReadOnly = true;
+            this.rtbInformacion.ShortcutsEnabled = false;
+            this.rtbInformacion.Size = new System.Drawing.Size(623, 408);
+            this.rtbInformacion.TabIndex = 9;
+            this.rtbInformacion.TabStop = false;
+            this.rtbInformacion.Text = "";
             // 
-            // lblHDDinfo
+            // plFinalizar
             // 
-            this.lblHDDinfo.AutoSize = true;
-            this.lblHDDinfo.BackColor = System.Drawing.Color.Transparent;
-            this.lblHDDinfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHDDinfo.ForeColor = System.Drawing.Color.White;
-            this.lblHDDinfo.Location = new System.Drawing.Point(64, 37);
-            this.lblHDDinfo.Name = "lblHDDinfo";
-            this.lblHDDinfo.Size = new System.Drawing.Size(112, 18);
-            this.lblHDDinfo.TabIndex = 10;
-            this.lblHDDinfo.Text = "Informacion...";
+            this.plFinalizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.plFinalizar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plFinalizar.Controls.Add(this.cmdFinalizar);
+            this.plFinalizar.Location = new System.Drawing.Point(12, 268);
+            this.plFinalizar.Name = "plFinalizar";
+            this.plFinalizar.Size = new System.Drawing.Size(147, 39);
+            this.plFinalizar.TabIndex = 11;
+            this.plFinalizar.Visible = false;
             // 
-            // lblCDinfo
+            // cmdFinalizar
             // 
-            this.lblCDinfo.AutoSize = true;
-            this.lblCDinfo.BackColor = System.Drawing.Color.Transparent;
-            this.lblCDinfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCDinfo.ForeColor = System.Drawing.Color.White;
-            this.lblCDinfo.Location = new System.Drawing.Point(67, 105);
-            this.lblCDinfo.Name = "lblCDinfo";
-            this.lblCDinfo.Size = new System.Drawing.Size(112, 18);
-            this.lblCDinfo.TabIndex = 12;
-            this.lblCDinfo.Text = "Informacion...";
+            this.cmdFinalizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.cmdFinalizar.FlatAppearance.BorderSize = 0;
+            this.cmdFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdFinalizar.ForeColor = System.Drawing.Color.White;
+            this.cmdFinalizar.Location = new System.Drawing.Point(3, 3);
+            this.cmdFinalizar.Name = "cmdFinalizar";
+            this.cmdFinalizar.Size = new System.Drawing.Size(139, 29);
+            this.cmdFinalizar.TabIndex = 0;
+            this.cmdFinalizar.Text = "Finalizar";
+            this.cmdFinalizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cmdFinalizar.UseVisualStyleBackColor = false;
+            this.cmdFinalizar.Click += new System.EventHandler(this.cmdFinalizar_Click);
             // 
-            // label3
+            // N
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(24, 90);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 18);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Serial CD:";
+            this.N.Text = "N";
+            this.N.Width = 40;
             // 
-            // lblDVDinfo
+            // Nombre
             // 
-            this.lblDVDinfo.AutoSize = true;
-            this.lblDVDinfo.BackColor = System.Drawing.Color.Transparent;
-            this.lblDVDinfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDVDinfo.ForeColor = System.Drawing.Color.White;
-            this.lblDVDinfo.Location = new System.Drawing.Point(67, 140);
-            this.lblDVDinfo.Name = "lblDVDinfo";
-            this.lblDVDinfo.Size = new System.Drawing.Size(112, 18);
-            this.lblDVDinfo.TabIndex = 14;
-            this.lblDVDinfo.Text = "Informacion...";
+            this.Nombre.Text = "Nombre";
+            this.Nombre.Width = 250;
             // 
-            // label5
+            // MB
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label5.Location = new System.Drawing.Point(24, 125);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 18);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Serial DVD:";
+            this.MB.Text = "MB";
+            this.MB.Width = 40;
             // 
-            // label6
+            // lvwInformacion
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(67, 208);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 18);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Informacion...";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label7.Location = new System.Drawing.Point(24, 193);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(152, 18);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Unidades de disco:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(67, 175);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 18);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Informacion...";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label9.Location = new System.Drawing.Point(24, 160);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(115, 18);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "MAC Address:";
-            // 
-            // lblUDinfo
-            // 
-            this.lblUDinfo.AutoSize = true;
-            this.lblUDinfo.BackColor = System.Drawing.Color.Transparent;
-            this.lblUDinfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUDinfo.ForeColor = System.Drawing.Color.White;
-            this.lblUDinfo.Location = new System.Drawing.Point(67, 70);
-            this.lblUDinfo.Name = "lblUDinfo";
-            this.lblUDinfo.Size = new System.Drawing.Size(112, 18);
-            this.lblUDinfo.TabIndex = 20;
-            this.lblUDinfo.Text = "Informacion...";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label11.Location = new System.Drawing.Point(24, 55);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(152, 18);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Unidades de disco:";
+            this.lvwInformacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.lvwInformacion.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.N,
+            this.Nombre,
+            this.MB});
+            this.lvwInformacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvwInformacion.ForeColor = System.Drawing.Color.White;
+            this.lvwInformacion.FullRowSelect = true;
+            this.lvwInformacion.HideSelection = false;
+            this.lvwInformacion.Location = new System.Drawing.Point(165, 25);
+            this.lvwInformacion.Name = "lvwInformacion";
+            this.lvwInformacion.Size = new System.Drawing.Size(623, 408);
+            this.lvwInformacion.TabIndex = 10;
+            this.lvwInformacion.UseCompatibleStateImageBehavior = false;
+            this.lvwInformacion.View = System.Windows.Forms.View.Details;
             // 
             // Inicio
             // 
@@ -339,49 +251,40 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 457);
+            this.Controls.Add(this.plFinalizar);
             this.Controls.Add(this.lblVersion);
-            this.Controls.Add(this.plInformacion);
             this.Controls.Add(this.plGeneral);
-            this.Controls.Add(this.menu);
+            this.Controls.Add(this.lvwInformacion);
+            this.Controls.Add(this.rtbInformacion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menu;
+            this.MaximizeBox = false;
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hardware & Software";
-            this.menu.ResumeLayout(false);
-            this.menu.PerformLayout();
             this.plGeneral.ResumeLayout(false);
-            this.plInformacion.ResumeLayout(false);
-            this.plInformacion.PerformLayout();
+            this.plFinalizar.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.Panel plGeneral;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Button cmdBalance;
         private System.Windows.Forms.Button cmdRegistro;
         private System.Windows.Forms.Button cmdProcesos;
         private System.Windows.Forms.Button cmdGeneral;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.Panel plInformacion;
-        private System.Windows.Forms.Label lblUDinfo;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label lblDVDinfo;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblCDinfo;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblHDDinfo;
-        private System.Windows.Forms.Label lblHDD;
         private System.Windows.Forms.Label lblVersion;
+        private System.Windows.Forms.Button cmdSalir;
+        private System.Windows.Forms.Button cmdInformacion;
+        private System.Windows.Forms.RichTextBox rtbInformacion;
+        private System.Windows.Forms.Panel plFinalizar;
+        private System.Windows.Forms.Button cmdFinalizar;
+        private System.Windows.Forms.ColumnHeader N;
+        private System.Windows.Forms.ColumnHeader Nombre;
+        private System.Windows.Forms.ColumnHeader MB;
+        private System.Windows.Forms.ListView lvwInformacion;
     }
 }
 

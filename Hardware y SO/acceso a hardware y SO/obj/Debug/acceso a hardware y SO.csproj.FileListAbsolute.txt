@@ -9,3 +9,5 @@ C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\De
 C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\acceso a hardware y SO.exe
 C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\acceso a hardware y SO.pdb
 C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\acceso_a_hardware_y_SO.Inicio.resources
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\Interop.WUApiLib.dll
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\Acceso a hardware y SO.csproj.ResolveComReference.cache

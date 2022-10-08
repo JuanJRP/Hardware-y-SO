@@ -169,7 +169,7 @@
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(33, 15);
             this.lblVersion.TabIndex = 8;
-            this.lblVersion.Text = "v1.1";
+            this.lblVersion.Text = "v1.2";
             // 
             // rtbInformacion
             // 

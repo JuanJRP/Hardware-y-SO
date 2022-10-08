@@ -34,11 +34,12 @@ namespace acceso_a_hardware_y_SO
             rtbInformacion.Text = (
                 $"Informacion General Del Sistema \n\r" +
                 $"Serial HDD:  {Informacion.Serial_HDD()} \n\r" +
-                $"Unidades de Disco:  \n\r" +
                 $"Serial CD:  {Informacion.Serial_CD()} \n\r" +
                 $"Serial DVD:  {Informacion.Serial_CD()} \n\r" + 
-                $"Procesadores: {Informacion.Procesadores().ToString()} \n\r" +
-                $"Memoria Ram: \n\r{Informacion.RAM()}\n\r" 
+                $"Procesadores: {Informacion.Procesadores().ToString()} \n\n\r" +
+                $"Memoria Ram  \n\r{Informacion.RAM()}\n\r" +
+                $"Unidades de Disco \n\r{Informacion.unidadDisco()} " 
+
                 );
         }
 

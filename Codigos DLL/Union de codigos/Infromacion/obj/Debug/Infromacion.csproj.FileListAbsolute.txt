@@ -1,0 +1,8 @@
+C:\Users\jojan\Desktop\Union de codigos\Infromacion\bin\Debug\Infromacion.dll
+C:\Users\jojan\Desktop\Union de codigos\Infromacion\bin\Debug\Infromacion.pdb
+C:\Users\jojan\Desktop\Union de codigos\Infromacion\obj\Debug\Infromacion.csproj.AssemblyReference.cache
+C:\Users\jojan\Desktop\Union de codigos\Infromacion\obj\Debug\Interop.WUApiLib.dll
+C:\Users\jojan\Desktop\Union de codigos\Infromacion\obj\Debug\Infromacion.csproj.ResolveComReference.cache
+C:\Users\jojan\Desktop\Union de codigos\Infromacion\obj\Debug\Infromacion.csproj.CoreCompileInputs.cache
+C:\Users\jojan\Desktop\Union de codigos\Infromacion\obj\Debug\Infromacion.dll
+C:\Users\jojan\Desktop\Union de codigos\Infromacion\obj\Debug\Infromacion.pdb

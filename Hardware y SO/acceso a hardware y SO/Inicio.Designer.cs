@@ -44,8 +44,20 @@
             this.Nombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.MB = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvwInformacion = new System.Windows.Forms.ListView();
+            this.txtRuta = new System.Windows.Forms.TextBox();
+            this.lblRuta = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.cmdLeer = new System.Windows.Forms.Button();
+            this.cmdEditar = new System.Windows.Forms.Button();
+            this.plRegedit = new System.Windows.Forms.Panel();
+            this.cmdCrear = new System.Windows.Forms.Button();
+            this.cmdCRUD = new System.Windows.Forms.Button();
+            this.txtCrud = new System.Windows.Forms.TextBox();
+            this.lblCrud = new System.Windows.Forms.Label();
             this.plGeneral.SuspendLayout();
             this.plFinalizar.SuspendLayout();
+            this.plRegedit.SuspendLayout();
             this.SuspendLayout();
             // 
             // plGeneral
@@ -169,7 +181,7 @@
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(33, 15);
             this.lblVersion.TabIndex = 8;
-            this.lblVersion.Text = "v1.2";
+            this.lblVersion.Text = "v1.4";
             // 
             // rtbInformacion
             // 
@@ -202,9 +214,10 @@
             this.cmdFinalizar.FlatAppearance.BorderSize = 0;
             this.cmdFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdFinalizar.ForeColor = System.Drawing.Color.White;
+            this.cmdFinalizar.ForeColor = System.Drawing.SystemColors.Window;
             this.cmdFinalizar.Location = new System.Drawing.Point(3, 3);
             this.cmdFinalizar.Name = "cmdFinalizar";
+            this.cmdFinalizar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cmdFinalizar.Size = new System.Drawing.Size(139, 29);
             this.cmdFinalizar.TabIndex = 0;
             this.cmdFinalizar.Text = "Finalizar";
@@ -245,17 +258,173 @@
             this.lvwInformacion.UseCompatibleStateImageBehavior = false;
             this.lvwInformacion.View = System.Windows.Forms.View.Details;
             // 
+            // txtRuta
+            // 
+            this.txtRuta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.txtRuta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRuta.ForeColor = System.Drawing.Color.White;
+            this.txtRuta.Location = new System.Drawing.Point(273, 134);
+            this.txtRuta.Name = "txtRuta";
+            this.txtRuta.Size = new System.Drawing.Size(417, 20);
+            this.txtRuta.TabIndex = 12;
+            this.txtRuta.Visible = false;
+            // 
+            // lblRuta
+            // 
+            this.lblRuta.AutoSize = true;
+            this.lblRuta.BackColor = System.Drawing.Color.Transparent;
+            this.lblRuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRuta.ForeColor = System.Drawing.Color.White;
+            this.lblRuta.Location = new System.Drawing.Point(307, 93);
+            this.lblRuta.Name = "lblRuta";
+            this.lblRuta.Size = new System.Drawing.Size(351, 20);
+            this.lblRuta.TabIndex = 13;
+            this.lblRuta.Text = "Ingrese la Ruta/Dirrecion del archivo a leer";
+            this.lblRuta.Visible = false;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.White;
+            this.lblNombre.Location = new System.Drawing.Point(336, 183);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(289, 20);
+            this.lblNombre.TabIndex = 14;
+            this.lblNombre.Text = "Ingrese el nombre de la llave a leer";
+            this.lblNombre.Visible = false;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNombre.ForeColor = System.Drawing.Color.White;
+            this.txtNombre.Location = new System.Drawing.Point(273, 230);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(417, 20);
+            this.txtNombre.TabIndex = 15;
+            this.txtNombre.Visible = false;
+            // 
+            // cmdLeer
+            // 
+            this.cmdLeer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.cmdLeer.FlatAppearance.BorderSize = 0;
+            this.cmdLeer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cmdLeer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdLeer.ForeColor = System.Drawing.Color.White;
+            this.cmdLeer.Location = new System.Drawing.Point(311, 296);
+            this.cmdLeer.Name = "cmdLeer";
+            this.cmdLeer.Size = new System.Drawing.Size(347, 29);
+            this.cmdLeer.TabIndex = 6;
+            this.cmdLeer.Text = "Leer";
+            this.cmdLeer.UseVisualStyleBackColor = false;
+            this.cmdLeer.Visible = false;
+            this.cmdLeer.Click += new System.EventHandler(this.cmdLeer_Click);
+            // 
+            // cmdEditar
+            // 
+            this.cmdEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.cmdEditar.FlatAppearance.BorderSize = 0;
+            this.cmdEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdEditar.ForeColor = System.Drawing.Color.White;
+            this.cmdEditar.Location = new System.Drawing.Point(3, 38);
+            this.cmdEditar.Name = "cmdEditar";
+            this.cmdEditar.Size = new System.Drawing.Size(139, 29);
+            this.cmdEditar.TabIndex = 0;
+            this.cmdEditar.Text = "Editar";
+            this.cmdEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cmdEditar.UseVisualStyleBackColor = false;
+            this.cmdEditar.Click += new System.EventHandler(this.cmdEditar_Click);
+            // 
+            // plRegedit
+            // 
+            this.plRegedit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.plRegedit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plRegedit.Controls.Add(this.cmdCrear);
+            this.plRegedit.Controls.Add(this.cmdEditar);
+            this.plRegedit.Location = new System.Drawing.Point(12, 313);
+            this.plRegedit.Name = "plRegedit";
+            this.plRegedit.Size = new System.Drawing.Size(147, 75);
+            this.plRegedit.TabIndex = 12;
+            this.plRegedit.Visible = false;
+            // 
+            // cmdCrear
+            // 
+            this.cmdCrear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.cmdCrear.FlatAppearance.BorderSize = 0;
+            this.cmdCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCrear.ForeColor = System.Drawing.Color.White;
+            this.cmdCrear.Location = new System.Drawing.Point(3, 3);
+            this.cmdCrear.Name = "cmdCrear";
+            this.cmdCrear.Size = new System.Drawing.Size(139, 29);
+            this.cmdCrear.TabIndex = 1;
+            this.cmdCrear.Text = "Crear";
+            this.cmdCrear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cmdCrear.UseVisualStyleBackColor = false;
+            this.cmdCrear.Click += new System.EventHandler(this.cmdCrear_Click);
+            // 
+            // cmdCRUD
+            // 
+            this.cmdCRUD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.cmdCRUD.FlatAppearance.BorderSize = 0;
+            this.cmdCRUD.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cmdCRUD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCRUD.ForeColor = System.Drawing.Color.White;
+            this.cmdCRUD.Location = new System.Drawing.Point(311, 224);
+            this.cmdCRUD.Name = "cmdCRUD";
+            this.cmdCRUD.Size = new System.Drawing.Size(347, 29);
+            this.cmdCRUD.TabIndex = 16;
+            this.cmdCRUD.UseVisualStyleBackColor = false;
+            this.cmdCRUD.Visible = false;
+            this.cmdCRUD.Click += new System.EventHandler(this.cmdCRUD_Click);
+            // 
+            // txtCrud
+            // 
+            this.txtCrud.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.txtCrud.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCrud.ForeColor = System.Drawing.Color.White;
+            this.txtCrud.Location = new System.Drawing.Point(273, 158);
+            this.txtCrud.Name = "txtCrud";
+            this.txtCrud.Size = new System.Drawing.Size(417, 20);
+            this.txtCrud.TabIndex = 18;
+            this.txtCrud.Visible = false;
+            // 
+            // lblCrud
+            // 
+            this.lblCrud.AutoSize = true;
+            this.lblCrud.BackColor = System.Drawing.Color.Transparent;
+            this.lblCrud.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCrud.ForeColor = System.Drawing.Color.White;
+            this.lblCrud.Location = new System.Drawing.Point(336, 111);
+            this.lblCrud.Name = "lblCrud";
+            this.lblCrud.Size = new System.Drawing.Size(0, 20);
+            this.lblCrud.TabIndex = 17;
+            this.lblCrud.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCrud.Visible = false;
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 457);
+            this.Controls.Add(this.cmdCRUD);
+            this.Controls.Add(this.txtCrud);
+            this.Controls.Add(this.lblCrud);
+            this.Controls.Add(this.plRegedit);
             this.Controls.Add(this.plFinalizar);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.plGeneral);
-            this.Controls.Add(this.lvwInformacion);
             this.Controls.Add(this.rtbInformacion);
+            this.Controls.Add(this.lvwInformacion);
+            this.Controls.Add(this.cmdLeer);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.lblRuta);
+            this.Controls.Add(this.txtRuta);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -264,6 +433,7 @@
             this.Text = "Hardware & Software";
             this.plGeneral.ResumeLayout(false);
             this.plFinalizar.ResumeLayout(false);
+            this.plRegedit.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,6 +455,17 @@
         private System.Windows.Forms.ColumnHeader Nombre;
         private System.Windows.Forms.ColumnHeader MB;
         private System.Windows.Forms.ListView lvwInformacion;
+        private System.Windows.Forms.TextBox txtRuta;
+        private System.Windows.Forms.Label lblRuta;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Button cmdLeer;
+        private System.Windows.Forms.Button cmdEditar;
+        private System.Windows.Forms.Panel plRegedit;
+        private System.Windows.Forms.Button cmdCrear;
+        private System.Windows.Forms.Button cmdCRUD;
+        private System.Windows.Forms.TextBox txtCrud;
+        private System.Windows.Forms.Label lblCrud;
     }
 }
 

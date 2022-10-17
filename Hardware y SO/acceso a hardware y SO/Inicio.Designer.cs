@@ -55,6 +55,7 @@
             this.cmdCRUD = new System.Windows.Forms.Button();
             this.txtCrud = new System.Windows.Forms.TextBox();
             this.lblCrud = new System.Windows.Forms.Label();
+            this.cmdBorrar = new System.Windows.Forms.Button();
             this.plGeneral.SuspendLayout();
             this.plFinalizar.SuspendLayout();
             this.plRegedit.SuspendLayout();
@@ -181,7 +182,7 @@
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(33, 15);
             this.lblVersion.TabIndex = 8;
-            this.lblVersion.Text = "v1.4";
+            this.lblVersion.Text = "v1.5";
             // 
             // rtbInformacion
             // 
@@ -329,7 +330,7 @@
             this.cmdEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdEditar.ForeColor = System.Drawing.Color.White;
-            this.cmdEditar.Location = new System.Drawing.Point(3, 38);
+            this.cmdEditar.Location = new System.Drawing.Point(3, 45);
             this.cmdEditar.Name = "cmdEditar";
             this.cmdEditar.Size = new System.Drawing.Size(139, 29);
             this.cmdEditar.TabIndex = 0;
@@ -342,11 +343,12 @@
             // 
             this.plRegedit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.plRegedit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plRegedit.Controls.Add(this.cmdBorrar);
             this.plRegedit.Controls.Add(this.cmdCrear);
             this.plRegedit.Controls.Add(this.cmdEditar);
             this.plRegedit.Location = new System.Drawing.Point(12, 313);
             this.plRegedit.Name = "plRegedit";
-            this.plRegedit.Size = new System.Drawing.Size(147, 75);
+            this.plRegedit.Size = new System.Drawing.Size(147, 119);
             this.plRegedit.TabIndex = 12;
             this.plRegedit.Visible = false;
             // 
@@ -357,7 +359,7 @@
             this.cmdCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmdCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdCrear.ForeColor = System.Drawing.Color.White;
-            this.cmdCrear.Location = new System.Drawing.Point(3, 3);
+            this.cmdCrear.Location = new System.Drawing.Point(3, 10);
             this.cmdCrear.Name = "cmdCrear";
             this.cmdCrear.Size = new System.Drawing.Size(139, 29);
             this.cmdCrear.TabIndex = 1;
@@ -404,6 +406,22 @@
             this.lblCrud.TabIndex = 17;
             this.lblCrud.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblCrud.Visible = false;
+            // 
+            // cmdBorrar
+            // 
+            this.cmdBorrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.cmdBorrar.FlatAppearance.BorderSize = 0;
+            this.cmdBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdBorrar.ForeColor = System.Drawing.Color.White;
+            this.cmdBorrar.Location = new System.Drawing.Point(3, 80);
+            this.cmdBorrar.Name = "cmdBorrar";
+            this.cmdBorrar.Size = new System.Drawing.Size(139, 29);
+            this.cmdBorrar.TabIndex = 2;
+            this.cmdBorrar.Text = "Borrar";
+            this.cmdBorrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cmdBorrar.UseVisualStyleBackColor = false;
+            this.cmdBorrar.Click += new System.EventHandler(this.cmdBorrar_Click);
             // 
             // Inicio
             // 
@@ -466,6 +484,7 @@
         private System.Windows.Forms.Button cmdCRUD;
         private System.Windows.Forms.TextBox txtCrud;
         private System.Windows.Forms.Label lblCrud;
+        private System.Windows.Forms.Button cmdBorrar;
     }
 }
 

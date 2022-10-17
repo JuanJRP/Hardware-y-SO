@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="acceso a hardware y SO.exe" size="236968">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="acceso a hardware y SO.exe" size="237480">
       <assemblyIdentity name="acceso a hardware y SO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PY3HhVkr4z0S8oz6DwlF7jsx+maSnjLiPe26OahiTu8=</dsig:DigestValue>
+        <dsig:DigestValue>3p0xbyq+/71RztJO4auXBiADsKXZYodTqraJoFrFSWk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,6 +62,18 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>tI6oMIiR8iamzzvxn6QMr+uiOJ+rLglzaRpq4VoRyRM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Win32.Registry.dll" size="26496">
+      <assemblyIdentity name="Microsoft.Win32.Registry" version="5.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6anSgcGnCKquNm+C/WoXQvZdopGMxPpeqqraC+JCd9k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

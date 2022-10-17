@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="acceso a hardware y SO.exe.manifest" size="4253">
+    <dependentAssembly dependencyType="install" codebase="acceso a hardware y SO.exe.manifest" size="4953">
       <assemblyIdentity name="acceso a hardware y SO.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>X3jTeVmFdIg8wM6vV850wDXFqLA7Nezs4juyykhV3ro=</dsig:DigestValue>
+        <dsig:DigestValue>iOSurLolJ9gZPnI5SqNk8jrIdgNQuG/32HlxwfE9aXM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

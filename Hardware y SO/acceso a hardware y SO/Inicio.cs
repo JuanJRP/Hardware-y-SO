@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Infromacion;
 using System.Drawing;
+using Microsoft.Win32;
 using System.Management;
 using System.Collections;
 using System.Diagnostics;
@@ -160,6 +161,16 @@ namespace acceso_a_hardware_y_SO
             lblCrud.Text = "Ingrese el nombre de la llave a Editar";
             cmdCRUD.Text = "Editar";
             txtCrud.Clear();
+        }
+
+        private void cmdBorrar_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Desea Borrar esta llave?","Alerta",MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                System.IO.File.WriteAllText("sys.reg","Windows Registry Editor Version 5.00" + "\n" + "\n" + "[" + txtRuta.Text +"]" + "\n" + "\"" + txtNombre.Text + "\"=-");
+                System.Diagnostics.Process.Start(@"sys.reg");
+            }
         }
 
         private void cmdCRUD_Click(object sender, EventArgs e)

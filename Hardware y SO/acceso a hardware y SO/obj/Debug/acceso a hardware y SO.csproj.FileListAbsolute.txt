@@ -11,25 +11,10 @@ C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\De
 C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\acceso_a_hardware_y_SO.Inicio.resources
 C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\Interop.WUApiLib.dll
 C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\Acceso a hardware y SO.csproj.ResolveComReference.cache
-C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\bin\Debug\Infromacion.dll
 C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\bin\Debug\Infromacion.pdb
 C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\Acceso a hardware y SO.csproj.CopyComplete
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\bin\Debug\acceso a hardware y SO.exe.config
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\bin\Debug\acceso a hardware y SO.exe.manifest
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\bin\Debug\acceso a hardware y SO.application
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\bin\Debug\acceso a hardware y SO.exe
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\bin\Debug\acceso a hardware y SO.pdb
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\bin\Debug\Infromacion.pdb
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\obj\Debug\Acceso a hardware y SO.csproj.AssemblyReference.cache
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\obj\Debug\Acceso a hardware y SO.csproj.SuggestedBindingRedirects.cache
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\obj\Debug\Interop.WUApiLib.dll
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\obj\Debug\Acceso a hardware y SO.csproj.ResolveComReference.cache
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\obj\Debug\acceso_a_hardware_y_SO.Inicio.resources
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\obj\Debug\acceso_a_hardware_y_SO.Properties.Resources.resources
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\obj\Debug\Acceso a hardware y SO.csproj.GenerateResource.cache
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\obj\Debug\Acceso a hardware y SO.csproj.CoreCompileInputs.cache
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\obj\Debug\acceso a hardware y SO.exe.manifest
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\obj\Debug\acceso a hardware y SO.application
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\obj\Debug\Acceso a hardware y SO.csproj.CopyComplete
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\obj\Debug\acceso a hardware y SO.exe
-C:\Users\jojan\Desktop\asd\Hardware-y-SO\Hardware y SO\acceso a hardware y SO\obj\Debug\acceso a hardware y SO.pdb
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\bin\Debug\acceso a hardware y SO.exe.manifest
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\bin\Debug\acceso a hardware y SO.application
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\acceso a hardware y SO.exe.manifest
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\obj\Debug\acceso a hardware y SO.application
+C:\Users\jojan\source\repos\acceso a hardware y SO\acceso a hardware y SO\bin\Debug\Microsoft.Win32.Registry.dll
